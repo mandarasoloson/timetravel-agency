@@ -1,9 +1,11 @@
-# 🕰️ TimeTravel Agency — Webapp Interactive
+# TimeTravel Agency — Webapp Interactive
 
 Webapp pour une agence de voyage temporel fictive (Paris 1889, Crétacé, Florence 1504),
 créée dans le cadre du projet supervisé IA M1/M2 — Session 2 : Webapp & IA Agents.
 
-## 🛠 Stack technique
+**Auteur : Manda Rasoloson** — M1 Développement Mobile & IoT, Ynov Campus Paris.
+
+## Stack technique
 
 - **React 19 + TypeScript** (Vite)
 - **Tailwind CSS v4** pour le design system (thème sombre, accents dorés)
@@ -12,7 +14,7 @@ créée dans le cadre du projet supervisé IA M1/M2 — Session 2 : Webapp & IA 
 - **Groq API** (modèle `llama-3.3-70b-versatile`) pour l'agent conversationnel, avec repli
   local automatique si aucune clé n'est configurée
 
-## ✨ Features implémentées
+## Features implémentées
 
 **Page d'accueil**
 - Hero plein écran avec animation d'apparition du titre, dégradés et images des 3 époques
@@ -50,7 +52,7 @@ créée dans le cadre du projet supervisé IA M1/M2 — Session 2 : Webapp & IA 
 - Hover effects sur les cards, boutons et liens
 - Transitions douces sur la modale, le quiz et le chat
 
-## 🤖 IA utilisées (transparence)
+## IA utilisées (transparence)
 
 - **Code** : généré et itéré avec Claude (Claude Code / Anthropic) à partir des consignes du
   brief pédagogique — composants React, logique du quiz, fonction serverless, styles Tailwind
@@ -58,7 +60,7 @@ créée dans le cadre du projet supervisé IA M1/M2 — Session 2 : Webapp & IA 
   de repli local sans IA externe (règles par mots-clés) si aucune clé API n'est fournie
 - **Visuels des destinations** : images générées par IA (fournies par l'utilisateur, session 1)
 
-## 📦 Installation locale
+## Installation locale
 
 ```bash
 cd timetravel-agency
@@ -85,7 +87,7 @@ chatbot fonctionne déjà en **mode local** (réponses par mots-clés, sans IA e
    (Avec `npm run dev` seul, la route `/api/chat` n'existe pas côté Vite : le chatbot
    bascule automatiquement en mode local, ce qui reste pleinement fonctionnel.)
 
-## 🚀 Déploiement (Vercel)
+## Déploiement (Vercel)
 
 ```bash
 npm i -g vercel
@@ -95,7 +97,7 @@ vercel
 Puis, dans le dashboard Vercel du projet : **Settings → Environment Variables**, ajoutez
 `GROQ_API_KEY` avec votre clé. Redéployez pour activer le chatbot IA en production.
 
-## 📁 Structure
+## Structure
 
 ```
 timetravel-agency/
@@ -108,7 +110,7 @@ timetravel-agency/
 │   └── App.tsx
 ```
 
-## 📝 Prompts principaux utilisés
+## Prompts principaux utilisés
 
 - *"Crée une landing page pour une agence de voyage temporel de luxe, thème sombre avec
   accents dorés, hero avec titre animé, galerie de 3 destinations (cards avec hover), style
@@ -122,7 +124,7 @@ timetravel-agency/
 - *"Ajoute des animations subtiles au scroll (fade-in), des hover effects sur les cards, et
   des transitions douces sur la modale et le chat, avec Framer Motion."*
 
-## 🙏 Crédits
+## Crédits
 
 - Visuels générés par IA (session 1 du projet)
 - Icônes : SVG inline, dessinées à la main pour ce projet
@@ -130,7 +132,7 @@ timetravel-agency/
   [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts
 - API IA : [Groq](https://groq.com) (modèles open source hébergés)
 
-## 💭 Réflexion sur le processus
+## Réflexion sur le processus
 
 Le plus grand arbitrage a été la sécurité de la clé API : plutôt que d'appeler Groq
 directement depuis le navigateur (ce qui exposerait la clé), le chatbot passe par une
@@ -139,6 +141,7 @@ compris sans clé configurée ou en développement local sans `vercel dev` — u
 repli par mots-clés a été ajouté côté client, invisible pour l'utilisateur si l'API
 répond correctement.
 
-## 📝 Licence
+## Licence
 
-Projet pédagogique — M1/M2 Digital & IA. Agence fictive, projet réalisé individuellement.
+Projet pédagogique — M1 Développement Mobile & IoT, Ynov Campus Paris. Agence fictive,
+projet réalisé individuellement par Manda Rasoloson.
