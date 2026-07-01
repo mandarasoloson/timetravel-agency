@@ -10,8 +10,8 @@ export default function Footer() {
         </div>
 
         <p className="text-xs text-mist/70 text-center">
-          Projet pédagogique — M1/M2 Digital &amp; IA. Agence fictive, aucune machine à voyager
-          dans le temps n'a réellement été utilisée.
+          Projet pédagogique — réalisé par Manda Rasoloson, M1 Développement Mobile &amp; IoT,
+          Ynov Campus Paris.
         </p>
 
         <div className="flex items-center gap-4 text-mist">
