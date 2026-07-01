@@ -54,11 +54,10 @@ créée dans le cadre du projet supervisé IA M1/M2 — Session 2 : Webapp & IA 
 
 ## IA utilisées (transparence)
 
-- **Code** : généré et itéré avec Claude (Claude Code / Anthropic) à partir des consignes du
-  brief pédagogique — composants React, logique du quiz, fonction serverless, styles Tailwind
+- **Code** : claude à partir de prompt
 - **Chatbot** : modèle `llama-3.3-70b-versatile` via l'API Groq (gratuite), avec un système
   de repli local sans IA externe (règles par mots-clés) si aucune clé API n'est fournie
-- **Visuels des destinations** : images générées par IA (fournies par l'utilisateur, session 1)
+- **Visuels des destinations** : images générées par IA (session 1)
 
 ## Installation locale
 
